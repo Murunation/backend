@@ -1,10 +1,10 @@
-import mysql from mysql2;
+import mysql from "mysql2";
 
 export const pool = mysql
-    .createPool({
+  .createPool({
     host: "127.0.0.1",
     user: "root",
     password: "",
     database: "ecommerce",
-    })
-    .promise();
+  })
+  .promise();
